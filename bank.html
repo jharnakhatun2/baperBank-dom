@@ -9,23 +9,42 @@
 </head>
 <body>
     <header>
-        <h1 class="text-4xl font-normal text-center pt-20">Let's get some <span class="text-violet-800 font-bold">Moooooney !!!</span></h1>
+        <h1 class="text-4xl font-normal text-center pt-10">Let's get some <span class="text-violet-800 font-bold">Moooooney !!!</span></h1>
     </header>
     <main>
-        <section class="bg-lime-200 w-1/2 mx-auto my-8 p-20">
+        <section class="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-9/12 mx-auto mt-10">
+            <div class="bg-yellow-200 p-5 rounded ">
+                <h4 class="text-xl">Deposit</h4>
+                <h2 class="text-3xl">$<span>00</span>
+                </h2>
+            </div>
+            <div class="bg-blue-200 p-5 rounded ">
+                <h4 class="text-xl">Withdraw</h4>
+                <h2 class="text-3xl">$<span>00</span>
+                </h2>
+            </div>
+            <div class="bg-violet-300 p-5 rounded">
+                <h4 class="text-xl">Balance</h4>
+                <h2 class="text-3xl">$<span>1260</span>
+                </h2>
+            </div>
+        </section>
+        <div class="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-10/12 mx-auto my-8">
+        <section class="bg-lime-200 p-20 rounded">
             <h3 class="text-2xl">Please Deposit</h3>
             <div>
-                <input type="text" name="deposit" id="deposit"  class="block w-9/12 my-3 p-2 rounded">
-                <button id="submit_btn"  class="block bg-lime-500 p-2 rounded w-4/12 hover:bg-zinc-600 hover:text-white">DEPOSIT</button>
+                <input type="text" name="deposit" id="deposit" placeholder="$00"  class="block w-9/12 my-3 p-2 rounded">
+                <button id="submit_btn"  class="block bg-lime-500 p-2 rounded w-8/12 hover:bg-zinc-600 hover:text-white text-sm text-center lg:text-left pl-0 lg:pl-6">DEPOSIT</button>
             </div>
         </section>
-        <section class="bg-pink-200 w-1/2 mx-auto my-8 p-20">
+        <section class="bg-pink-200 p-20 rounded">
             <h3 class="text-2xl">Please Withdraw</h3>
             <div>
-                <input type="text" name="withdraw" id="withdraw" class="block w-9/12 my-3 p-2 rounded">
-                <button id="submit_btn"  class="block bg-pink-500 p-2 rounded w-4/12 hover:bg-zinc-600 hover:text-white">WITHDRAW</button>
+                <input type="text" name="withdraw" id="withdraw" placeholder="$00" class="block w-9/12 my-3 p-2 rounded">
+                <button id="submit_btn"  class="block text-sm text-center lg:text-left pl-0 lg:pl-6 bg-pink-500 p-2 rounded w-8/12 hover:bg-zinc-600 hover:text-white">WITHDRAW</button>
             </div>
         </section>
+    </div>
     </main>
 </body>
 </html>
