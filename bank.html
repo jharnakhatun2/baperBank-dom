@@ -15,17 +15,17 @@
         <section class="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-9/12 mx-auto mt-10">
             <div class="bg-yellow-200 p-5 rounded ">
                 <h4 class="text-xl">Deposit</h4>
-                <h2 class="text-3xl">$<span>00</span>
+                <h2 class="text-3xl">$<span id="deposit_amount">00</span>
                 </h2>
             </div>
             <div class="bg-blue-200 p-5 rounded ">
                 <h4 class="text-xl">Withdraw</h4>
-                <h2 class="text-3xl">$<span>00</span>
+                <h2 class="text-3xl">$<span id="withdraw_amount">00</span>
                 </h2>
             </div>
             <div class="bg-violet-300 p-5 rounded">
                 <h4 class="text-xl">Balance</h4>
-                <h2 class="text-3xl">$<span>1260</span>
+                <h2 class="text-3xl">$<span id="balance_amount">1260</span>
                 </h2>
             </div>
         </section>
@@ -34,17 +34,18 @@
             <h3 class="text-2xl">Please Deposit</h3>
             <div>
                 <input type="text" name="deposit" id="deposit" placeholder="$00"  class="block w-9/12 my-3 p-2 rounded">
-                <button id="submit_btn"  class="block bg-lime-500 p-2 rounded w-8/12 hover:bg-zinc-600 hover:text-white text-sm text-center lg:text-left pl-0 lg:pl-6">DEPOSIT</button>
+                <button id="deposit_btn"  class="block bg-lime-500 p-2 rounded w-8/12 hover:bg-zinc-600 hover:text-white text-sm text-center lg:text-left pl-0 lg:pl-6">DEPOSIT</button>
             </div>
         </section>
         <section class="bg-pink-200 p-20 rounded">
             <h3 class="text-2xl">Please Withdraw</h3>
             <div>
                 <input type="text" name="withdraw" id="withdraw" placeholder="$00" class="block w-9/12 my-3 p-2 rounded">
-                <button id="submit_btn"  class="block text-sm text-center lg:text-left pl-0 lg:pl-6 bg-pink-500 p-2 rounded w-8/12 hover:bg-zinc-600 hover:text-white">WITHDRAW</button>
+                <button id="withdraw_btn"  class="block text-sm text-center lg:text-left pl-0 lg:pl-6 bg-pink-500 p-2 rounded w-8/12 hover:bg-zinc-600 hover:text-white">WITHDRAW</button>
             </div>
         </section>
     </div>
     </main>
+    <script src="js/bank.js"></script>
 </body>
 </html>
